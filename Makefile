@@ -1,2 +1,2 @@
 build:
-	docker build -t myrails .
+	docker build -t jmcarbo/docker-ruby .

@@ -46,7 +46,7 @@ RUN apt-get install -y bison ruby \
 	&& make -j"$(nproc)" \
 	&& apt-get purge -y --auto-remove bison ruby \
 	&& make install \
-	&& rm -r /usr/src/ruby && \
+	&& rm -r /usr/src/ruby \
 	&& rm -rf /var/lib/apt/lists/*
 
 # skip installing gem documentation
